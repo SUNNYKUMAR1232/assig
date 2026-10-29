@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d6b5b" />
+    <title>जनसेवा सहायक | आय प्रमाण-पत्र समीक्षा</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">ज</div>
+          <div><strong>जनसेवा</strong><span>सहायक</span></div>
+        </div>
+        <div class="office-switcher">
+          <span class="eyebrow">कार्यालय</span>
+          <strong>अंचल कार्यालय, दानापुर</strong>
+          <span class="muted">पटना, बिहार <span class="chevron">⌄</span></span>
+        </div>
+        <nav class="nav-list" aria-label="मुख्य नेविगेशन">
+          <a class="nav-item active" href="#dashboard"><span class="nav-icon">▦</span> डैशबोर्ड</a>
+          <a class="nav-item" href="#applications"><span class="nav-icon">▤</span> आवेदन <b>12</b></a>
+          <a class="nav-item" href="#deadlines"><span class="nav-icon">◷</span> समय-सीमा</a>
+          <a class="nav-item" href="#audit"><span class="nav-icon">◌</span> ऑडिट लॉग</a>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="help-card"><span class="help-icon">?</span><div><strong>सहायता चाहिए?</strong><small>प्रक्रिया गाइड देखें</small></div><span>›</span></div>
+          <div class="profile"><div class="avatar">अ</div><div><strong>अजय कुमार</strong><small>कार्यपालक सहायक</small></div><span class="more">•••</span></div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="mobile-brand"><div class="brand-mark">ज</div><strong>जनसेवा सहायक</strong></div>
+          <div class="breadcrumb"><span>डैशबोर्ड</span><i>/</i><strong>आवेदन समीक्षा</strong></div>
+          <div class="top-actions"><button class="icon-button" aria-label="सूचनाएं">♧<span class="notification-dot"></span></button><div class="top-avatar">अ</div></div>
+        </header>
+
+        <section id="dashboard" class="content">
+          <div class="page-heading">
+            <div><p class="eyebrow green">मंगलवार, 27 अक्टूबर 2026</p><h1>नमस्ते, अजय जी <span>👋</span></h1><p class="subtitle">आज के आवेदनों की समीक्षा यहां से शुरू करें।</p></div>
+            <button class="primary-button" id="newApplication"><span>＋</span> नया आवेदन</button>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat-card"><div class="stat-icon teal">▤</div><div><span>कुल आवेदन</span><strong>24</strong><small class="positive">↑ 8.2% <em>पिछले माह से</em></small></div></article>
+            <article class="stat-card"><div class="stat-icon amber">◷</div><div><span>समीक्षा लंबित</span><strong>12</strong><small class="warning">3 आज समय-सीमा में</small></div></article>
+            <article class="stat-card"><div class="stat-icon blue">✓</div><div><span>इस माह स्वीकृत</span><strong>09</strong><small class="positive">↑ 12.5% <em>पिछले माह से</em></small></div></article>
+            <article class="stat-card"><div class="stat-icon red">!</div><div><span>ध्यान आवश्यक</span><strong>03</strong><small class="danger">महत्वपूर्ण फ्लैग</small></div></article>
+          </div>
+
+          <div class="workspace-grid">
+            <section id="applications" class="panel applications-panel">
+              <div class="panel-header"><div><h2>आवेदन समीक्षा कतार</h2><p>प्राथमिकता के अनुसार व्यवस्थित</p></div><button class="filter-button">सभी आवेदन <span>⌄</span></button></div>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>आवेदक</th><th>आवेदन संख्या</th><th>प्राप्ति तिथि</th><th>स्थिति</th><th>प्राथमिकता</th><th></th></tr></thead>
+                  <tbody id="applicationRows"></tbody>
+                </table>
+              </div>
+              <div class="table-footer"><span>12 में से 1–5 दिखा रहे हैं</span><div class="pagination"><button disabled>‹</button><button class="current">1</button><button>2</button><button>3</button><button>›</button></div></div>
+            </section>
+
+            <aside class="panel activity-panel">
+              <div class="panel-header"><div><h2>हाल की गतिविधि</h2><p>आपके कार्यालय में</p></div><button class="text-button">सभी देखें</button></div>
+              <div class="activity-list">
+                <div class="activity"><div class="activity-icon green-bg">✓</div><div><strong>आवेदन स्वीकृत</strong><p>रवि कुमार का आवेदन</p><small>10 मिनट पहले</small></div></div>
+                <div class="activity"><div class="activity-icon orange-bg">↩</div><div><strong>सुधार के लिए लौटाया</strong><p>सुनीता देवी का आवेदन</p><small>1 घंटे पहले</small></div></div>
+                <div class="activity"><div class="activity-icon blue-bg">＋</div><div><strong>नया आवेदन प्राप्त</strong><p>मोहन प्रसाद का आवेदन</p><small>2 घंटे पहले</small></div></div>
+                <div class="activity"><div class="activity-icon purple-bg">✦</div><div><strong>AI समीक्षा पूरी</strong><p>रीना कुमारी का आवेदन</p><small>3 घंटे पहले</small></div></div>
+              </div>
+              <div class="tip-card"><span>✦</span><div><strong>स्मार्ट सुझाव</strong><p>3 आवेदन ऐसे हैं जिनकी समय-सीमा अगले 24 घंटे में समाप्त हो रही है।</p><button class="link-button">अभी देखें →</button></div></div>
+            </aside>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="modal-backdrop" id="reviewModal" aria-hidden="true">
+      <section class="review-drawer" role="dialog" aria-modal="true" aria-labelledby="reviewTitle">
+        <div class="drawer-header"><div><span class="eyebrow green">आवेदन समीक्षा</span><h2 id="reviewTitle">आवेदन विवरण</h2></div><button class="close-button" id="closeModal" aria-label="बंद करें">×</button></div>
+        <div class="drawer-scroll">
+          <div class="applicant-hero"><div class="large-avatar" id="detailInitial">स</div><div><h3 id="detailName">सुनीता देवी</h3><p id="detailRef">आवेदन संख्या: RTPS-INC-2026-00128</p></div><span class="status-pill pending">समीक्षा लंबित</span></div>
+          <div class="detail-grid"><div><span>सेवा</span><strong>आय प्रमाण-पत्र</strong></div><div><span>वित्तीय वर्ष</span><strong>2025–26</strong></div><div><span>प्राप्ति तिथि</span><strong>25 अक्टूबर 2026</strong></div><div><span>घोषित वार्षिक आय</span><strong>₹ 1,80,000</strong></div></div>
+          <div class="section-title"><h3>दस्तावेज़ और सत्यापन</h3><span class="simulated">डेमो डेटा</span></div>
+          <div class="evidence-list"><div class="evidence-row"><span class="doc-icon">▤</span><div><strong>स्व-घोषणा पत्र</strong><small>अपलोड किया गया · 24 अक्टूबर 2026</small></div><span class="check">✓</span></div><div class="evidence-row missing"><span class="doc-icon">▤</span><div><strong>आय का प्रमाण</strong><small>दस्तावेज़ उपलब्ध नहीं</small></div><span class="flag">!</span></div><div class="evidence-row"><span class="doc-icon">▤</span><div><strong>पहचान प्रमाण (आधार)</strong><small>अपलोड किया गया · 24 अक्टूबर 2026</small></div><span class="check">✓</span></div></div>
+          <div class="section-title"><h3>सत्यापन निष्कर्ष</h3><span class="deterministic">नियम-आधारित जांच</span></div>
+          <div class="finding warning-finding"><span>!</span><div><strong>आवश्यक दस्तावेज़ गायब</strong><p>आय का प्रमाण उपलब्ध नहीं है। यह कमी आवेदन की पात्रता का प्रमाण नहीं है।</p></div></div>
+          <div class="finding info-finding"><span>i</span><div><strong>मानवीय समीक्षा आवश्यक</strong><p>घोषित आय की स्वतंत्र पुष्टि अभी नहीं हुई है।</p></div></div>
+          <div class="ai-card"><div class="ai-heading"><span class="sparkle">✦</span><div><strong>AI समीक्षा सहायक</strong><small>तथ्यों और नियम-आधारित निष्कर्षों पर आधारित</small></div><span class="ai-ready">तैयार</span></div><p class="ai-summary">आवेदन में पहचान प्रमाण और स्व-घोषणा पत्र उपलब्ध हैं। आय का प्रमाण प्रस्तुत नहीं किया गया है, इसलिए आय की पुष्टि के लिए आवेदक से आवश्यक दस्तावेज़ मांगना उचित होगा।</p><div class="ai-action"><span>सुझाया गया अगला कदम</span><strong>सुधार के लिए वापस करें</strong></div><small class="ai-disclaimer">AI अंतिम निर्णय नहीं लेता। निर्णय अधिकारी द्वारा लिया जाना आवश्यक है।</small></div>
+          <div id="audit" class="section-title"><h3>ऑडिट इतिहास</h3></div><div class="audit-line"><span class="audit-dot"></span><div><strong>आवेदन प्राप्त</strong><p>ऑनलाइन माध्यम · 25 अक्टूबर 2026, 11:42 AM</p></div></div>
+        </div>
+        <div class="drawer-footer"><button class="secondary-button" id="returnButton">↩ वापस करें</button><button class="reject-button" id="rejectButton">अस्वीकृत</button><button class="approve-button" id="approveButton">स्वीकृत करें</button></div>
+      </section>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
